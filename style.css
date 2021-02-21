@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+/* css opacity from 0 to 1 */
+@keyframes opacityChange {
+	0% {
+	  opacity: 0;
+	}
+	40% {
+		opacity: 0;
+	}
+	70% {
+		opacity: 0.7;
+	}
+	100% {
+		opacity: 1;
+	}
+  }
+  @keyframes modalopen {
+	from {
+	  opacity: 0;
+	}
+  
+	to {
+	  opacity: 1;
+	}
+  }
+  /* document */
+*{
+	box-sizing: border-box;
+}
+body{
+	margin: 0;
+	height: 100vh;
+	background-color: black;
+	
+}
+#container{
+height: 100vh;
+width: 100vw;
+overflow: hidden;
+position: relative;
+}
+/* big img background */
+#eyesImg{
+height: 100%;
+width: auto;
+float: right;
+
+}
+/*for javascript add oneEyes and move img */
+.twoEyes.oneEyes{
+	transform: translateX(65%);
+	transition:all 3s ease;
+
+}
+/* all img div */
+/* smooth opacity keyframes */
+ .keyFrames{
+	animation-name: opacityChange;
+	animation-duration: 6s;
+	
+} 
+
+/* class for all div witch img and link */
+.divLinkImg{
+	visibility: hidden;
+	height: 25%;
+    width: 20%;
+	border-radius: 8px;
+	position: absolute;
+	z-index: 10;
+	
+
+}
+
+/* id for home 1 div */
+#divHome{
+		margin: 50px 180px;
+}
+/* id for o mnie 2 div */
+#divAboutMe{
+	margin: 250px 680px;
+	
+}
+/* id for potfolio 3 div */
+#portfolioDiv{
+	height: 35%;
+    width: 20%;
+	margin: 470px 50px;
+}
+/* id for kontakt 4 div */
+#kontaktDiv{
+	bottom: 50px;
+	left: 500px;
+	
+}
+
+
+/* text  */
+.spanLink{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	opacity: .0;
+	font-size:90px;
+	font-family: 'Sacramento', cursive;
+	color: #F0E68C;
+	
+	color: #DAA520;
+	color: #FFD700;
+	
+}
+.divLinkImg:hover .spanLink{
+opacity: 1;
+z-index: 20;
+}
+/* img pur */
+.divLinkImg img{
+	height: 100%;
+	width:100%;
+	border-radius: 8px;
+	 filter: grayscale(100%); 
+	 /* -webkit-filter: blur(3px);
+	filter: blur(3px);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out; */
+}
+ .divLinkImg:hover img{
+	filter: grayscale(0%);
+	/* -webkit-filter: blur(0px);
+	filter: blur(0px); */
+} 
+
