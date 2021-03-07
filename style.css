@@ -68,13 +68,14 @@ float: right;
 	border-radius: 8px;
 	position: absolute;
 	z-index: 10;
-	
+	cursor: pointer;
 
 }
 
 /* id for home 1 div */
 #divHome{
 		margin: 50px 180px;
+
 }
 /* id for o mnie 2 div */
 #divAboutMe{
@@ -130,4 +131,23 @@ z-index: 20;
 	/* -webkit-filter: blur(0px);
 	filter: blur(0px); */
 } 
+/*tekst dla podstrony home*/
 
+.tekstLink{
+	display: none;
+	animation-name: opacityChange;
+	animation-duration: 3s;
+	color: white;
+	position: absolute;
+	left: 50px;
+	top: 100px;
+	font-size: 2rem;
+	right: 15px;
+	width: 60%;
+	height: 50%;
+	overflow: auto;
+	scrollbar-width: thin;          /* "auto" or "thin" */
+  scrollbar-color:  gray black;
+  z-index: 20;
+padding: 10px;
+}
