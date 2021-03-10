@@ -74,24 +74,22 @@ float: right;
 
 /* id for home 1 div */
 #divHome{
-		margin: 50px 180px;
+		margin: 70px 80px;
 
 }
 /* id for o mnie 2 div */
 #divAboutMe{
-	margin: 250px 680px;
+	margin: 70px 580px;
 	
 }
 /* id for potfolio 3 div */
 #portfolioDiv{
-	height: 35%;
-    width: 20%;
-	margin: 470px 50px;
+	
+	margin: 320px 80px;
 }
 /* id for kontakt 4 div */
 #kontaktDiv{
-	bottom: 50px;
-	left: 500px;
+	margin: 320px 580px;
 	
 }
 
@@ -131,14 +129,39 @@ z-index: 20;
 	/* -webkit-filter: blur(0px);
 	filter: blur(0px); */
 } 
-/*tekst dla podstrony home*/
-
-.tekstLink{
+.topicSourceLink{
 	display: none;
 	animation-name: opacityChange;
 	animation-duration: 3s;
 	color: white;
 	position: absolute;
+	left: 50px;
+	font-size: 2rem;
+	right: 15px;
+	width: 60%;
+	height: 50%;
+	overflow: auto;
+	scrollbar-width: thin;          /* "auto" or "thin" */
+  scrollbar-color:  gray black;
+  z-index: 20;
+padding: 10px;
+}
+/*topic dla podstrony */
+.topicText{
+	left: 50px;
+	top: 20px;
+		font-size: 2.5rem;	
+}
+/*navigation links*/
+.navLink{
+
+bottom: 20px;
+width: auto;
+height: auto;
+}
+/*tekst dla podstrony */
+.tekstLink{
+	
 	left: 50px;
 	top: 100px;
 	font-size: 2rem;
@@ -148,6 +171,5 @@ z-index: 20;
 	overflow: auto;
 	scrollbar-width: thin;          /* "auto" or "thin" */
   scrollbar-color:  gray black;
-  z-index: 20;
 padding: 10px;
 }
