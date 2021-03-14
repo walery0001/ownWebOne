@@ -49,14 +49,14 @@ float: right;
 /*for javascript add oneEyes and move img */
 .twoEyes.oneEyes{
 	transform: translateX(65%);
-	transition:all 3s ease;
+	transition:all 1s ease;
 
 }
 /* all img div */
 /* smooth opacity keyframes */
  .keyFrames{
 	animation-name: opacityChange;
-	animation-duration: 6s;
+	animation-duration: 1s;
 	
 } 
 

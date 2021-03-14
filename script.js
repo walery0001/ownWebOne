@@ -30,39 +30,33 @@ let divLinkImg = document.querySelectorAll('.divLinkImg');
 let tekstLink = document.querySelector('.tekstLink');
 let topicText = document.querySelector('.topicText');
 let topicSourceLink = document.querySelectorAll('.topicSourceLink');
+let navLink = document.querySelectorAll('.navLink');
+//click and move big picture
+
 container.addEventListener('mousemove',moveBigPic,{once:true})
    function moveBigPic(){
     img.classList.add('oneEyes');
-   
-    divLinkImg.forEach(e=>e.classList.add('keyFrames'));
-    divLinkImg.forEach(e=> e.style.visibility = 'visible');
-    
-}
-
-divLinkImg.forEach(e=> e.addEventListener('click',clickHome))
-
-function clickHome(){
-
-const hideAllpic =	divLinkImg.forEach(e=> e.style.visibility = 'hidden');
-	 // topicSourceLink.style.display = 'block';
-	 topicSourceLink.forEach(e=> {
-
-	 	e.style.display = 'block';
-	 	
-	 });
-
-	divLinkImg.forEach(e=> {
 	
-if(e.id === 'divHome'){
-
+	//img visible
+    divLinkImg.forEach(e=>{
+    	e.classList.add('keyFrames');
+ e.style.visibility = 'visible';
+    })
+	setTimeout(()=>{
+divLinkImg.forEach(e=> e.addEventListener('click',clickHome));
+	},3000);
+	
 }
+//click navLink and change tekst topic 
+console.log(navLink)
 
-	});
 
 
-
+ //show Topic_menu Text topic_Links
+function clickHome(){
+divLinkImg.forEach(e=> e.style.visibility = 'hidden');
+		 topicSourceLink.forEach(e=> {
+	 	e.style.display = 'block';	
+	 });
 }
-
-
-
 
