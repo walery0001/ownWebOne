@@ -23,6 +23,9 @@
     opacity: 1;
   }
 }
+:root {
+  --radius-pic: 8px;
+  }
 /* document */
 * {
   box-sizing: border-box;
@@ -47,13 +50,13 @@ body {
 /*for javascript add oneEyes and move img */
 .twoEyes.oneEyes {
   transform: translateX(65%);
-  transition: all 1s ease;
+  transition: all 2s ease;
 }
 /* all img div */
 /* smooth opacity keyframes */
 .keyFrames {
   animation-name: opacityChange;
-  animation-duration: 1s;
+  animation-duration: 3s;
 }
 
 /* class for all div witch img and link */
@@ -91,7 +94,7 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   opacity: 0;
-  font-size: 90px;
+  font-size: 50px;
   font-family: "Sacramento", cursive;
   color: #f0e68c;
 
@@ -147,6 +150,9 @@ body {
   width: auto;
   height: auto;
 }
+.navLink:hover{
+cursor: pointer;
+}
 /*tekst dla podstrony */
 .tekstLink {
   left: 50px;
@@ -159,4 +165,126 @@ body {
   scrollbar-width: thin; /* "auto" or "thin" */
   scrollbar-color: gray black;
   padding: 10px;
+}
+/*portfolio  grafik */
+.clickImg{
+	width: 150px;
+	height: 150px;
+  display: block;
+  border-radius: var(--radius-pic);
+  cursor: pointer;
+}
+.firstFotoGalery{
+padding: 5px;
+width: 100px;
+  height: 100px;
+border-radius: var(--radius-pic);
+cursor: pointer;
+}
+.imgBlackBg{
+  background-color: rgba(0,0,0,.7);
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  position: fixed;
+
+
+  z-index: 30;
+  display: none;
+ text-align: center;
+}
+.fullImg{
+  width: 500px;
+  height: 500px;
+ margin-top:5%;
+}
+
+
+
+
+@media screen and (max-width: 430px){
+/* class for all div witch img and link */
+.divLinkImg {
+    height: 90px;
+  width: 90px;
+  }
+
+/* id for home 1 div */
+#divHome {
+  margin: 10px 10px;
+}
+/* id for o mnie 2 div */
+#divAboutMe {
+  margin: 10px 140px;
+}
+/* id for potfolio 3 div */
+#portfolioDiv {
+  margin: 160px 10px;
+}
+/* id for kontakt 4 div */
+#kontaktDiv {
+  margin: 160px 140px;
+}
+
+/* text img link*/
+.spanLink {
+      font-size: 20px;
+  }
+/*links text down */ 
+.topicSourceLink {
+ 
+  
+  left: 10px;
+  font-size: 1.5rem;
+  right: 10px;
+  width: 60%;
+  height: 50%;
+  padding: 10px;
+}
+/*topic dla podstrony */
+.topicText {
+  left: 10px;
+  top: 5px;
+  font-size: 1.5rem;
+}
+/*navigation links footer*/
+.navLink {
+  bottom: 20px;
+  width: auto;
+  height: auto;
+font-size: 1.2rem;
+}
+/*tekst dla podstrony */
+.tekstLink {
+  left: 5px;
+  top: 80px;
+  font-size: 1rem;
+  right: 10px;
+  width: 80%;
+  height: 50%;
+  padding: 10px;
+}
+/*portfolio  grafik */
+.clickImg{
+  width: 90px;
+  height: 90px;
+ 
+}
+.firstFotoGalery{
+padding: 5px;
+width: 80px;
+  height: 100px;
+
+}
+.imgBlackBg{
+   text-align: center;
+
+}
+.fullImg{
+  width: 250px;
+  height: 350px;
+ margin-top:60px;
+}
+
 }
