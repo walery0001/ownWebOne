@@ -67,8 +67,8 @@ console.log(f.target.classList)
 	e.addEventListener('click' ,el=>{
 		let targetel = el.target.textContent
 	
-if(el.target.src === `file:///G:/java%20script%20lerning/own_Web/grafik/hubert/h00.jpeg`){
-	 el.target.src = `file:///G:/java%20script%20lerning/own_Web/grafik/hubert/h1.jpeg`
+if(el.target.src === `https://raw.githubusercontent.com/walery0001/ownWebOne/master/grafik/hubert/h00.jpeg`){
+	 el.target.src = `https://raw.githubusercontent.com/walery0001/ownWebOne/master/grafik/hubert/h1.jpeg`
 	for(i=1;i<18;i++){	
 	tekstLink.innerHTML += `<img class="firstFotoGalery" src="grafik/hubert/h${i}.jpeg"/>`}
 }
@@ -77,7 +77,7 @@ if(el.target.src === `file:///G:/java%20script%20lerning/own_Web/grafik/hubert/h
 if(el.target.classList[0] === 'firstFotoGalery'){
 	imgBlackBg.style.display = "block"
 	
-	let imgForDiv = el.target.src.split('file:///G:/java%20script%20lerning/own_Web/')
+	let imgForDiv = el.target.src.split('https://raw.githubusercontent.com/walery0001/ownWebOne/master/')
 
 	imgBlackBg.innerHTML =`<img class="fullImg" src="${imgForDiv[1]}"/>`
 
