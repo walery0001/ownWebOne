@@ -67,8 +67,8 @@ console.log(f.target.classList)
 	e.addEventListener('click' ,el=>{
 		let targetel = el.target.textContent
 	
-if(el.target.src === `https://raw.githubusercontent.com/walery0001/ownWebOne/master/grafik/hubert/h00.jpeg`){
-	 el.target.src = `https://raw.githubusercontent.com/walery0001/ownWebOne/master/grafik/hubert/h1.jpeg`
+if(el.target.src === `https://walery0001.github.io/ownWebOne/grafik/hubert/h00.jpeg`){
+	 el.target.src = `https://walery0001.github.io/ownWebOne/grafik/hubert/h1.jpeg`
 	for(i=1;i<18;i++){	
 	tekstLink.innerHTML += `<img class="firstFotoGalery" src="grafik/hubert/h${i}.jpeg"/>`}
 	console.log(el.target.src)
