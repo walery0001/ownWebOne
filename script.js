@@ -118,20 +118,20 @@ imgBlackBg.addEventListener('click',()=>
 	})
   });
 //pictures links / links click
-if(targetLink === 'home'){
+if(f.target.classList[1] === 'home'){
 	topicText.innerText = linkSources[0].topic;
 	tekstLink.innerText = linkSources[0].source;
 }
-if(targetLink === 'aboutMe' || 'Omnie'){
+if(f.target.classList[1] === 'omnie'){
 	topicText.innerText = linkSources[1].topic;
 	tekstLink.innerText = linkSources[1].source;
 }
-if(targetLink === 'portfolio' || 'Portfolio'){
+if(f.target.classList[1] === 'portfol'){
 	topicText.innerText = linkSources[2].topic;
 	tekstLink.innerHTML = linkSources[2].source;
 
 }
-if(targetLink === 'kontaktImg' || 'Kontakt'){
+if(f.target.classList[1] === 'kontakt1'){
 	topicText.innerText = linkSources[3].topic;
 	tekstLink.innerText = linkSources[3].source;
 }
