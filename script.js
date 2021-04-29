@@ -55,7 +55,7 @@ function moveBigPic() {
 //show Topic_menu Text topic_Links
 function clickHome(f) {
 const targetLink =	f.target.className
-console.log(f.target.classList)
+
   divLinkImg.forEach((e) => {
 	  
 	  e.style.visibility = "hidden";
@@ -71,9 +71,9 @@ if(el.target.src === `https://walery0001.github.io/ownWebOne/grafik/hubert/h00.j
 	 el.target.src = `https://walery0001.github.io/ownWebOne/grafik/hubert/h1.jpeg`
 	for(i=1;i<18;i++){	
 	tekstLink.innerHTML += `<img class="firstFotoGalery" src="grafik/hubert/h${i}.jpeg"/>`}
-	console.log(el.target.src)
+	
 }
-
+console.log(el.target.src)
 //show small pic BIG
 if(el.target.classList[0] === 'firstFotoGalery'){
 	imgBlackBg.style.display = "block"
