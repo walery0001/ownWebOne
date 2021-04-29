@@ -78,7 +78,7 @@ console.log(el.target.src)
 if(el.target.classList[0] === 'firstFotoGalery'){
 	imgBlackBg.style.display = "block"
 	
-	let imgForDiv = el.target.src.split('https://raw.githubusercontent.com/walery0001/ownWebOne/master/')
+	let imgForDiv = el.target.src.split('https://walery0001.github.io/ownWebOne/')
 
 	imgBlackBg.innerHTML =`<img class="fullImg" src="${imgForDiv[1]}"/>`
 
