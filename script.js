@@ -4,13 +4,13 @@ const linkSources = [
     id: 1,
     topic: "Home",
     source:
-      " sprawiedliwie traktować innych. Przykładem może być  żeby została oddana sprawiedliwość Jego wybranym, którzy wołają do  W gruncie rzeczy słowa te są obietnicą: Nasz Bóg jest świadomy, przez co przechodzimy w dniach ostatnich, i w odpowiednim czasie uczyni zadość sprawiedliwości (2 Tes. 1:6). Kiedy stosujemy zasady, których uczył Jezus, traktujemy innych sprawiedliwie. A jeśli padliśmy ofiarą niesprawiedliwości panującej w świecie Szatana, pociesza nas świadomość, że Jehowa na pewno się tym zajmie. w19.05 s. 5, ak. 18, 19 ",
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos numquam iure, nisi eos assumenda quod, ullam quidem tempora veritatis expedita impedit blanditiis, at sed omnis alias. Beatae incidunt hic provident!",
   },
   {
     id: 2,
     topic: "Omnie",
     source:
-      "miały pomóc jego naśladowcom spremy innych sprawiedliwie. ",
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
   },
   {
     id: 3,
@@ -20,11 +20,11 @@ const linkSources = [
   {
     id: 4,
     topic: "Kontakt",
-    source: `Kamienica 62-530 ${'\n'}telefon:345 432 908 ${'\n'}mail:hubert@gmail.com`,
+    source: `<i class="fas fa-phone-alt"></i> 345 432 908<br><br><i class="fas fa-envelope"></i> hubert@gmail.com`,
   },
  
 ];
-
+//${'\n'} new line in innerText
 let img = document.getElementById("eyesImg");
 let container = document.getElementById("container");
 let divLinkImg = document.querySelectorAll(".divLinkImg");
@@ -54,8 +54,9 @@ function moveBigPic() {
 
 //show Topic_menu Text topic_Links
 function clickHome(f) {
-const targetLink =	f.target.className
-console.log(f.target.classList)
+const targetLink =	f.target.className//remove
+let fourPicLink = f.target.classList[1]
+console.log(f.target.classList[1])
   divLinkImg.forEach((e) => {
 	  
 	  e.style.visibility = "hidden";
@@ -66,9 +67,9 @@ console.log(f.target.classList)
     e.style.display = "block";
 	e.addEventListener('click' ,el=>{
 		let targetel = el.target.textContent
-	
-if(el.target.src === `file:///G:/java%20script%20lerning/own_Web/grafik/hubert/h00.jpeg`){
-	 el.target.src = `file:///G:/java%20script%20lerning/own_Web/grafik/hubert/h1.jpeg`
+	//
+if(el.target.src === `https://walery0001.github.io/ownWebOne/grafik/hubert/h00.jpeg`){
+	 el.target.src = `https://walery0001.github.io/ownWebOne/grafik/hubert/h1.jpeg`
 	for(i=1;i<18;i++){	
 	tekstLink.innerHTML += `<img class="firstFotoGalery" src="grafik/hubert/h${i}.jpeg"/>`}
 }
@@ -77,7 +78,7 @@ if(el.target.src === `file:///G:/java%20script%20lerning/own_Web/grafik/hubert/h
 if(el.target.classList[0] === 'firstFotoGalery'){
 	imgBlackBg.style.display = "block"
 	
-	let imgForDiv = el.target.src.split('file:///G:/java%20script%20lerning/own_Web/')
+	let imgForDiv = el.target.src.split('https://walery0001.github.io/ownWebOne/')
 
 	imgBlackBg.innerHTML =`<img class="fullImg" src="${imgForDiv[1]}"/>`
 
@@ -112,32 +113,33 @@ imgBlackBg.addEventListener('click',()=>
 
 		if(targetel === 'Kontakt'){
 			topicText.innerText = linkSources[3].topic;
-			tekstLink.innerText = linkSources[3].source;
+			tekstLink.innerHTML = linkSources[3].source;
 		}
 	})
   });
 //pictures links / links click
-if(targetLink === 'home'){
+if(f.target.classList[1] === 'home'){
 	topicText.innerText = linkSources[0].topic;
 	tekstLink.innerText = linkSources[0].source;
+	console.log()
 }
-if(targetLink === 'aboutMe' || 'Omnie'){
+if(fourPicLink === 'omnie'){
 	topicText.innerText = linkSources[1].topic;
 	tekstLink.innerText = linkSources[1].source;
 }
-if(targetLink === 'portfolio' || 'Portfolio'){
+if(fourPicLink === 'portfol'){
 	topicText.innerText = linkSources[2].topic;
 	tekstLink.innerHTML = linkSources[2].source;
 
 }
-if(targetLink === 'kontaktImg' || 'Kontakt'){
+if(fourPicLink === 'kontakt1'){
 	topicText.innerText = linkSources[3].topic;
-	tekstLink.innerText = linkSources[3].source;
+	tekstLink.innerHTML = linkSources[3].source;
 }
 
 }
 //link	to foto galery
 
 const widthWindow = window.screen.width;
-widthWindow < 430 ?
+widthWindow < 1050 ?
 	eyesImg.src = 'grafik/jankaa1.jpg':true

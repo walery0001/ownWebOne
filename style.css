@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Sacramento&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
 /* css opacity from 0 to 1 */
 @keyframes opacityChange {
   0% {
@@ -14,6 +15,7 @@
     opacity: 1;
   }
 }
+/* 
 @keyframes modalopen {
   from {
     opacity: 0;
@@ -26,6 +28,7 @@
 :root {
   --radius-pic: 8px;
   }
+   */
 /* document */
 * {
   box-sizing: border-box;
@@ -56,14 +59,14 @@ body {
 /* smooth opacity keyframes */
 .keyFrames {
   animation-name: opacityChange;
-  animation-duration: 3s;
+  animation-duration: 5s;
 }
 
 /* class for all div witch img and link */
 .divLinkImg {
   visibility: hidden;
-  height: 25%;
-  width: 20%;
+  height: 40%;
+  width: 30%;
   border-radius: 8px;
   position: absolute;
   z-index: 10;
@@ -72,7 +75,7 @@ body {
 
 /* id for home 1 div */
 #divHome {
-  margin: 70px 80px;
+  margin: 70px 50px;
 }
 /* id for o mnie 2 div */
 #divAboutMe {
@@ -80,11 +83,11 @@ body {
 }
 /* id for potfolio 3 div */
 #portfolioDiv {
-  margin: 320px 80px;
+  margin: 490px 50px;
 }
 /* id for kontakt 4 div */
 #kontaktDiv {
-  margin: 320px 580px;
+  margin: 490px 580px;
 }
 
 /* text  */
@@ -94,10 +97,9 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   opacity: 0;
-  font-size: 50px;
+  font-size: 70px;
   font-family: "Sacramento", cursive;
   color: #f0e68c;
-
   color: #daa520;
   color: #ffd700;
 }
@@ -137,15 +139,34 @@ body {
   scrollbar-color: gray black;
   z-index: 20;
   padding: 10px;
+  
+}
+.fas{
+ margin-right: 20px;
+  font-size: 50px;
+   color: #f0e68c;
+  
+}
+.fa-phone-alt{
+  font-size: 40px;
+   margin-top: 60px;
 }
 /*topic dla podstrony */
 .topicText {
+  font-family: 'Dancing Script', cursive;
+  
+  color: #daa520;
+  color: #ffd700;
   left: 50px;
   top: 20px;
   font-size: 2.5rem;
 }
 /*navigation links*/
 .navLink {
+  font-family: 'Dancing Script', cursive;
+  
+  color: #daa520;
+  color: #ffd700;
   bottom: 20px;
   width: auto;
   height: auto;
@@ -165,6 +186,7 @@ cursor: pointer;
   scrollbar-width: thin; /* "auto" or "thin" */
   scrollbar-color: gray black;
   padding: 10px;
+  font-family: cursive;
 }
 /*portfolio  grafik */
 .clickImg{
@@ -173,6 +195,7 @@ cursor: pointer;
   display: block;
   border-radius: var(--radius-pic);
   cursor: pointer;
+  margin-top: 20px;
 }
 .firstFotoGalery{
 padding: 5px;
@@ -199,32 +222,126 @@ cursor: pointer;
   height: 500px;
  margin-top:5%;
 }
-
-
-
+/*media*/
+@media screen and (min-width:2400px){
+ 
+  #divAboutMe {
+    margin: 70px 1180px;
+  }
+  
+  #kontaktDiv {
+    margin: 490px 1180px;
+  }
+  
+}
+@media screen and (max-width:2400px){
+   #divAboutMe {
+    margin: 70px 780px;
+  }
+   #kontaktDiv {
+    margin: 490px 780px;
+  }
+  }
+@media screen and (max-width:1950px){
+    #divAboutMe {
+    margin: 70px 650px;
+  }
+   #kontaktDiv {
+    margin: 490px 650px;
+  }
+  }
+  @media screen and (max-width:1680px){
+    #divAboutMe {
+    margin: 70px 550px;
+  }
+   #kontaktDiv {
+    margin: 490px 550px;
+  }
+  .divLinkImg {
+    height: 30%;
+    width: 25%;
+     }
+  }
+  @media screen and (max-width:1450px){
+    #divAboutMe {
+    margin: 70px 420px;
+  }
+   #kontaktDiv {
+    margin: 490px 420px;
+  }
+ 
+  }
+  @media screen and (max-width:1250px){
+    .divLinkImg {
+      height: 290px;
+    width: 290px;
+    }
+  
+  /* id for home 1 div */
+  #divHome {
+    margin: 30px 10px;
+  }
+  /* id for o mnie 2 div */
+  #divAboutMe {
+    margin: 30px 340px;
+  }
+  /* id for potfolio 3 div */
+  #portfolioDiv {
+    margin: 360px 10px;
+  }
+  /* id for kontakt 4 div */
+  #kontaktDiv {
+    margin: 360px 340px;
+  }
+ 
+  }
+  @media screen and (max-width:750px){
+    .divLinkImg {
+      height: 490px;
+    width: 290px;
+    }
+  
+  /* id for home 1 div */
+  #divHome {
+    margin: 50px 10px;
+  }
+  /* id for o mnie 2 div */
+  #divAboutMe {
+    margin: 50px 340px;
+  }
+  /* id for potfolio 3 div */
+  #portfolioDiv {
+    margin: 360px 10px;
+  }
+  /* id for kontakt 4 div */
+  #kontaktDiv {
+    margin: 360px 340px;
+  }
+ 
+  }
 
 @media screen and (max-width: 430px){
 /* class for all div witch img and link */
 .divLinkImg {
-    height: 90px;
-  width: 90px;
+    height: 120px;
+  width: 120px;
   }
 
 /* id for home 1 div */
 #divHome {
-  margin: 10px 10px;
+  margin: 80px 10px;
 }
 /* id for o mnie 2 div */
 #divAboutMe {
-  margin: 10px 140px;
+  margin: 80px 140px;
 }
 /* id for potfolio 3 div */
 #portfolioDiv {
-  margin: 160px 10px;
+  margin: 210px 10px;
 }
 /* id for kontakt 4 div */
 #kontaktDiv {
-  margin: 160px 140px;
+  margin: 210px 140px;
 }
 
 /* text img link*/
@@ -234,7 +351,7 @@ cursor: pointer;
 /*links text down */ 
 .topicSourceLink {
  
-  
+  font-family: 'Courier New', Courier, monospace;
   left: 10px;
   font-size: 1.5rem;
   right: 10px;
