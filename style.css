@@ -329,19 +329,19 @@ cursor: pointer;
 
 /* id for home 1 div */
 #divHome {
-  margin: 80px 10px;
+  margin: 80px 5px;
 }
 /* id for o mnie 2 div */
 #divAboutMe {
-  margin: 80px 140px;
+  margin: 80px 135px;
 }
 /* id for potfolio 3 div */
 #portfolioDiv {
-  margin: 210px 10px;
+  margin: 210px 5px;
 }
 /* id for kontakt 4 div */
 #kontaktDiv {
-  margin: 210px 140px;
+  margin: 210px 135px;
 }
 
 /* text img link*/
