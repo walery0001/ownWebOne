@@ -54,9 +54,8 @@ function moveBigPic() {
 
 //show Topic_menu Text topic_Links
 function clickHome(f) {
-const targetLink =	f.target.className//remove
-let fourPicLink = f.target.classList[1]
-console.log(f.target.classList[1])
+const targetLink =	f.target.className
+
   divLinkImg.forEach((e) => {
 	  
 	  e.style.visibility = "hidden";
@@ -67,13 +66,14 @@ console.log(f.target.classList[1])
     e.style.display = "block";
 	e.addEventListener('click' ,el=>{
 		let targetel = el.target.textContent
-	//
+	
 if(el.target.src === `https://walery0001.github.io/ownWebOne/grafik/hubert/h00.jpeg`){
 	 el.target.src = `https://walery0001.github.io/ownWebOne/grafik/hubert/h1.jpeg`
 	for(i=1;i<18;i++){	
 	tekstLink.innerHTML += `<img class="firstFotoGalery" src="grafik/hubert/h${i}.jpeg"/>`}
+	
 }
-
+console.log(el.target.src)
 //show small pic BIG
 if(el.target.classList[0] === 'firstFotoGalery'){
 	imgBlackBg.style.display = "block"
@@ -123,16 +123,16 @@ if(f.target.classList[1] === 'home'){
 	tekstLink.innerText = linkSources[0].source;
 	console.log()
 }
-if(fourPicLink === 'omnie'){
+if(f.target.classList[1] === 'omnie'){
 	topicText.innerText = linkSources[1].topic;
 	tekstLink.innerText = linkSources[1].source;
 }
-if(fourPicLink === 'portfol'){
+if(f.target.classList[1] === 'portfol'){
 	topicText.innerText = linkSources[2].topic;
 	tekstLink.innerHTML = linkSources[2].source;
 
 }
-if(fourPicLink === 'kontakt1'){
+if(f.target.classList[1] === 'kontakt1'){
 	topicText.innerText = linkSources[3].topic;
 	tekstLink.innerHTML = linkSources[3].source;
 }

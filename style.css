@@ -350,8 +350,8 @@ cursor: pointer;
   }
 /*links text down */ 
 .topicSourceLink {
+ /* font-family: 'Courier New', Courier, monospace; */ 
  
-  font-family: 'Courier New', Courier, monospace;
   left: 10px;
   font-size: 1.5rem;
   right: 10px;
@@ -405,3 +405,94 @@ width: 80px;
 }
 
 }
+@media screen and (max-height: 732px){
+  /* class for all div witch img and link */
+
+  .divLinkImg {
+
+   height: 140px;
+    width: 140px;
+    }
+  
+  /* id for home 1 div */
+  #divHome {
+    margin: 20px 40px;
+  }
+  /* id for o mnie 2 div */
+  #divAboutMe {
+    margin: 20px 190px;
+  }
+  /* id for potfolio 3 div */
+  #portfolioDiv {
+    margin: 170px 40px;
+  }
+  /* id for kontakt 4 div */
+  #kontaktDiv {
+    margin: 170px 190px;
+  }
+  
+  /* text img link*/
+  .spanLink {
+        font-size: 20px;
+    }
+  /*links text down */ 
+  .topicSourceLink {
+    /*   font-family: 'Courier New', Courier, monospace; */ 
+     left: 30px;
+    font-size: 1.5rem;
+     padding: 5px;
+   }
+  /*topic dla podstrony */
+  .topicText {
+    left: 30px;
+    top: 5px;
+    font-size: 1.5rem;
+  }
+  /*navigation links footer*/
+  .navLink {
+    bottom: 20px;
+    width: auto;
+    height: auto;
+  font-size: 1.2rem;
+  }
+  /*tekst dla podstrony */
+  .tekstLink {
+    left: 5px;
+    top: 50px;
+    font-size: 1rem;
+    right: 10px;
+    width: 80%;
+    height: 50%;
+    padding: 10px;
+  }
+  /*portfolio  grafik */
+  .clickImg{
+    width: 90px;
+    height: 90px;
+   
+  }
+  .firstFotoGalery{
+  padding: 5px;
+  width: 80px;
+    height: 100px;
+  
+  }
+  .imgBlackBg{
+     text-align: center;
+  
+  }
+  .fullImg{
+    width: 250px;
+    height: 350px;
+   margin-top:60px;
+  }
+  .fas{
+    margin-right: 20px;
+     font-size: 30px;
+      
+     
+   }
+   .fa-phone-alt{
+          margin-top: 50px;
+   }
+  }
