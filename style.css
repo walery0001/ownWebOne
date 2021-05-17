@@ -273,8 +273,8 @@ cursor: pointer;
   }
   @media screen and (max-width:1250px){
     .divLinkImg {
-      height: 290px;
-    width: 290px;
+      height: 260px;
+    width: 260px;
     }
   
   /* id for home 1 div */
@@ -283,7 +283,7 @@ cursor: pointer;
   }
   /* id for o mnie 2 div */
   #divAboutMe {
-    margin: 30px 340px;
+    margin: 30px 300px;
   }
   /* id for potfolio 3 div */
   #portfolioDiv {
@@ -291,57 +291,73 @@ cursor: pointer;
   }
   /* id for kontakt 4 div */
   #kontaktDiv {
-    margin: 360px 340px;
+    margin: 360px 300px;
   }
  
   }
-  @media screen and (max-width:750px){
+  @media screen and (max-width:830px){
     .divLinkImg {
-      height: 490px;
-    width: 290px;
+      height: 180px;
+    width: 180px;
     }
   
   /* id for home 1 div */
   #divHome {
-    margin: 50px 10px;
+    margin: 20px 30px;
   }
   /* id for o mnie 2 div */
   #divAboutMe {
-    margin: 50px 340px;
+    margin: 20px 220px;
   }
   /* id for potfolio 3 div */
   #portfolioDiv {
-    margin: 360px 10px;
+    margin: 210px 30px;
   }
   /* id for kontakt 4 div */
   #kontaktDiv {
-    margin: 360px 340px;
+    margin: 210px 220px;
   }
- 
+  
+   .topicText {
+     
+  
+     font-size: 1.7rem;
+   }
+   
+   /*tekst dla podstrony */
+   .tekstLink {
+    
+     font-size: 1.2rem;
+    
+   }
+   .navLink {
+    
+  font-size: 1.2rem;
+  }
   }
 
-@media screen and (max-width: 430px){
+@media screen and (max-width: 640px){
 /* class for all div witch img and link */
 .divLinkImg {
-    height: 120px;
-  width: 120px;
+    height: 130px;
+  width: 130px;
   }
 
 /* id for home 1 div */
 #divHome {
-  margin: 80px 10px;
+  margin: 50px 38px;
 }
 /* id for o mnie 2 div */
 #divAboutMe {
-  margin: 80px 140px;
+  margin: 50px 178px;
 }
 /* id for potfolio 3 div */
 #portfolioDiv {
-  margin: 210px 10px;
+  margin: 190px 38px;
 }
 /* id for kontakt 4 div */
 #kontaktDiv {
-  margin: 210px 140px;
+  margin: 190px 178px;
 }
 
 /* text img link*/
@@ -405,94 +421,46 @@ width: 80px;
 }
 
 }
-@media screen and (max-height: 732px){
-  /* class for all div witch img and link */
-
-  .divLinkImg {
-
-   height: 140px;
-    width: 140px;
-    }
-  
-  /* id for home 1 div */
+@media screen and (max-width: 411px){
+ 
   #divHome {
-    margin: 20px 40px;
+    margin: 90px 10px;
   }
   /* id for o mnie 2 div */
   #divAboutMe {
-    margin: 20px 190px;
+    margin: 90px 150px;
   }
   /* id for potfolio 3 div */
   #portfolioDiv {
-    margin: 170px 40px;
+    margin:230px 10px;
   }
   /* id for kontakt 4 div */
   #kontaktDiv {
-    margin: 170px 190px;
+    margin: 230px 150px;
   }
   
-  /* text img link*/
-  .spanLink {
-        font-size: 20px;
+  
+  }
+  @media screen and (max-width: 320px){
+    .divLinkImg {
+      height: 110px;
+    width: 110px;
     }
-  /*links text down */ 
-  .topicSourceLink {
-    /*   font-family: 'Courier New', Courier, monospace; */ 
-     left: 30px;
-    font-size: 1.5rem;
-     padding: 5px;
-   }
-  /*topic dla podstrony */
-  .topicText {
-    left: 30px;
-    top: 5px;
-    font-size: 1.5rem;
-  }
-  /*navigation links footer*/
-  .navLink {
-    bottom: 20px;
-    width: auto;
-    height: auto;
-  font-size: 1.2rem;
-  }
-  /*tekst dla podstrony */
-  .tekstLink {
-    left: 5px;
-    top: 50px;
-    font-size: 1rem;
-    right: 10px;
-    width: 80%;
-    height: 50%;
-    padding: 10px;
-  }
-  /*portfolio  grafik */
-  .clickImg{
-    width: 90px;
-    height: 90px;
-   
-  }
-  .firstFotoGalery{
-  padding: 5px;
-  width: 80px;
-    height: 100px;
-  
-  }
-  .imgBlackBg{
-     text-align: center;
-  
-  }
-  .fullImg{
-    width: 250px;
-    height: 350px;
-   margin-top:60px;
-  }
-  .fas{
-    margin-right: 20px;
-     font-size: 30px;
-      
-     
-   }
-   .fa-phone-alt{
-          margin-top: 50px;
-   }
-  }
+    #divHome {
+      margin: 90px 10px;
+    }
+    /* id for o mnie 2 div */
+    #divAboutMe {
+      margin: 90px 130px;
+    }
+    /* id for potfolio 3 div */
+    #portfolioDiv {
+      margin:210px 10px;
+    }
+    /* id for kontakt 4 div */
+    #kontaktDiv {
+      margin: 210px 130px;
+    }
+    
+    
+    }

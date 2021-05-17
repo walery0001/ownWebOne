@@ -141,5 +141,5 @@ if(f.target.classList[1] === 'kontakt1'){
 //link	to foto galery
 
 const widthWindow = window.screen.width;
-widthWindow < 1050 ?
+widthWindow < 640 ?
 	eyesImg.src = 'grafik/jankaa1.jpg':true
