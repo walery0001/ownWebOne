@@ -345,19 +345,19 @@ cursor: pointer;
 
 /* id for home 1 div */
 #divHome {
-  margin: 50px 38px;
+  margin: 40px 5px;
 }
 /* id for o mnie 2 div */
 #divAboutMe {
-  margin: 50px 178px;
+  margin: 40px 138px;
 }
 /* id for potfolio 3 div */
 #portfolioDiv {
-  margin: 190px 38px;
+  margin: 180px 5px;
 }
 /* id for kontakt 4 div */
 #kontaktDiv {
-  margin: 190px 178px;
+  margin:180px 138px;
 }
 
 /* text img link*/
@@ -424,19 +424,19 @@ width: 80px;
 @media screen and (max-width: 411px){
  
   #divHome {
-    margin: 90px 10px;
+    margin: 30px 10px;
   }
   /* id for o mnie 2 div */
   #divAboutMe {
-    margin: 90px 150px;
+    margin: 30px 150px;
   }
   /* id for potfolio 3 div */
   #portfolioDiv {
-    margin:230px 10px;
+    margin:200px 10px;
   }
   /* id for kontakt 4 div */
   #kontaktDiv {
-    margin: 230px 150px;
+    margin: 200px 150px;
   }
   
   
