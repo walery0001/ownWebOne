@@ -1,0 +1,477 @@
+@import url("https://fonts.googleapis.com/css2?family=Sacramento&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+/* css opacity from 0 to 1 */
+@keyframes opacityChange {
+  0% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 0;
+  }
+  70% {
+    opacity: 0.7;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/* 
+@keyframes modalopen {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+:root {
+  --radius-pic: 8px;
+  }
+   */
+/* document */
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  height: 100%;
+  background-color: black;
+}
+#container {
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  position: relative;
+}
+/* big img background */
+#eyesImg {
+  height: 100%;
+  width: auto;
+  float: right;
+}
+/*for javascript add oneEyes and move img */
+.twoEyes.oneEyes {
+  transform: translateX(65%);
+  transition: all 2s ease;
+}
+/* all img div */
+/* smooth opacity keyframes */
+.keyFrames {
+  animation-name: opacityChange;
+  animation-duration: 5s;
+}
+
+/* class for all div witch img and link */
+.divLinkImg {
+  visibility: hidden;
+  height: 40%;
+  width: 30%;
+  border-radius: 8px;
+  position: absolute;
+  z-index: 10;
+  cursor: pointer;
+}
+
+/* id for home 1 div */
+#divHome {
+  margin: 70px 50px;
+}
+/* id for o mnie 2 div */
+#divAboutMe {
+  margin: 70px 580px;
+}
+/* id for potfolio 3 div */
+#portfolioDiv {
+  margin: 490px 50px;
+}
+/* id for kontakt 4 div */
+#kontaktDiv {
+  margin: 490px 580px;
+}
+
+/* text  */
+.spanLink {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  font-size: 70px;
+  font-family: "Sacramento", cursive;
+  color: #f0e68c;
+  color: #daa520;
+  color: #ffd700;
+}
+.divLinkImg:hover .spanLink {
+  opacity: 1;
+  z-index: 20;
+}
+/* img pur */
+.divLinkImg img {
+  height: 100%;
+  width: 100%;
+  border-radius: 8px;
+  filter: grayscale(100%);
+  /* -webkit-filter: blur(3px);
+	filter: blur(3px);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out; */
+}
+.divLinkImg:hover img {
+  filter: grayscale(0%);
+  /* -webkit-filter: blur(0px);
+	filter: blur(0px); */
+}
+.topicSourceLink {
+  display: none;
+  animation-name: opacityChange;
+  animation-duration: 3s;
+  color: white;
+  position: absolute;
+  left: 50px;
+  font-size: 2rem;
+  right: 15px;
+  width: 60%;
+  height: 50%;
+  overflow: auto;
+  scrollbar-width: thin; /* "auto" or "thin" */
+  scrollbar-color: gray black;
+  z-index: 20;
+  padding: 10px;
+  
+}
+.fas{
+ margin-right: 20px;
+  font-size: 50px;
+   color: #f0e68c;
+  
+}
+.fa-phone-alt{
+  font-size: 40px;
+   margin-top: 60px;
+}
+/*topic dla podstrony */
+.topicText {
+  font-family: 'Dancing Script', cursive;
+  
+  color: #daa520;
+  color: #ffd700;
+  left: 50px;
+  top: 20px;
+  font-size: 2.5rem;
+}
+/*navigation links*/
+.navLink {
+  font-family: 'Dancing Script', cursive;
+  
+  color: #daa520;
+  color: #ffd700;
+  bottom: 20px;
+  width: auto;
+  height: auto;
+}
+.navLink:hover{
+cursor: pointer;
+}
+/*tekst dla podstrony */
+.tekstLink {
+  left: 50px;
+  top: 100px;
+  font-size: 2rem;
+  right: 15px;
+  width: 60%;
+  height: 50%;
+  overflow: auto;
+  scrollbar-width: thin; /* "auto" or "thin" */
+  scrollbar-color: gray black;
+  padding: 10px;
+  font-family: cursive;
+}
+/*portfolio  grafik */
+.clickImg{
+	width: 150px;
+	height: 150px;
+  display: block;
+  border-radius: var(--radius-pic);
+  cursor: pointer;
+  margin-top: 20px;
+}
+.firstFotoGalery{
+padding: 5px;
+width: 100px;
+  height: 100px;
+border-radius: var(--radius-pic);
+cursor: pointer;
+}
+.imgBlackBg{
+  background-color: rgba(0,0,0,.7);
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  position: fixed;
+
+
+  z-index: 30;
+  display: none;
+ text-align: center;
+}
+.fullImg{
+  width: 500px;
+  height: 500px;
+ margin-top:5%;
+}
+/*media*/
+@media screen and (min-width:2400px){
+ 
+  #divAboutMe {
+    margin: 70px 1180px;
+  }
+  
+  #kontaktDiv {
+    margin: 490px 1180px;
+  }
+  
+}
+@media screen and (max-width:2400px){
+   #divAboutMe {
+    margin: 70px 780px;
+  }
+   #kontaktDiv {
+    margin: 490px 780px;
+  }
+  }
+@media screen and (max-width:1950px){
+    #divAboutMe {
+    margin: 70px 650px;
+  }
+   #kontaktDiv {
+    margin: 490px 650px;
+  }
+  }
+  @media screen and (max-width:1680px){
+    #divAboutMe {
+    margin: 70px 550px;
+  }
+   #kontaktDiv {
+    margin: 490px 550px;
+  }
+  .divLinkImg {
+    height: 30%;
+    width: 25%;
+     }
+     /* laptop */
+  }
+  @media screen and (max-width:1450px){
+    #divAboutMe {
+    margin: 70px 420px;
+  }
+   #kontaktDiv {
+    margin: 390px 420px;
+  }
+ #portfolioDiv {
+  margin: 390px 50px;
+}
+  }
+  @media screen and (max-width:1250px){
+    .divLinkImg {
+      height: 260px;
+    width: 260px;
+    }
+  
+  /* id for home 1 div */
+  #divHome {
+    margin: 30px 10px;
+  }
+  /* id for o mnie 2 div */
+  #divAboutMe {
+    margin: 30px 300px;
+  }
+  /* id for potfolio 3 div */
+  #portfolioDiv {
+    margin: 360px 10px;
+  }
+  /* id for kontakt 4 div */
+  #kontaktDiv {
+    margin: 360px 300px;
+  }
+   
+  }
+  @media screen and (max-width:897px){
+    .divLinkImg {
+      height: 160px;
+    width: 160px;
+    }
+  
+  /* id for home 1 div */
+  #divHome {
+    margin: 10px 30px;
+  }
+  /* id for o mnie 2 div */
+  #divAboutMe {
+    margin: 10px 220px;
+  }
+  /* id for potfolio 3 div */
+  #portfolioDiv {
+    margin: 180px 30px;
+  }
+  /* id for kontakt 4 div */
+  #kontaktDiv {
+    margin: 180px 220px;
+  }
+  
+   .topicText {
+     
+    font-size: 1.7rem;
+   }
+   
+   /*tekst dla podstrony */
+   .tekstLink {
+    top: 80px;
+     font-size: 1.2rem;
+    
+   }
+   .navLink {
+    
+  font-size: 1.2rem;
+  }
+  .fas{
+ 
+ 
+  
+}
+.fa-phone-alt{
+  
+   margin-top: 20px;
+}
+  }
+
+@media screen and (max-width: 640px){
+/* class for all div witch img and link */
+.divLinkImg {
+    height: 130px;
+  width: 130px;
+  }
+
+/* id for home 1 div */
+#divHome {
+  margin: 40px 5px;
+}
+/* id for o mnie 2 div */
+#divAboutMe {
+  margin: 40px 138px;
+}
+/* id for potfolio 3 div */
+#portfolioDiv {
+  margin: 180px 5px;
+}
+/* id for kontakt 4 div */
+#kontaktDiv {
+  margin:180px 138px;
+}
+
+/* text img link*/
+.spanLink {
+      font-size: 20px;
+  }
+/*links text down */ 
+.topicSourceLink {
+ /* font-family: 'Courier New', Courier, monospace; */ 
+ 
+  left: 10px;
+  font-size: 1.5rem;
+  right: 10px;
+  width: 60%;
+  height: 50%;
+  padding: 10px;
+}
+/*topic dla podstrony */
+.topicText {
+  left: 10px;
+  top: 5px;
+  font-size: 1.5rem;
+}
+/*navigation links footer*/
+.navLink {
+  bottom: 20px;
+  width: auto;
+  height: auto;
+font-size: 1.2rem;
+}
+/*tekst dla podstrony */
+.tekstLink {
+  left: 5px;
+  top: 80px;
+  font-size: 1rem;
+  right: 10px;
+  width: 80%;
+  height: 50%;
+  padding: 10px;
+}
+/*portfolio  grafik */
+.clickImg{
+  width: 90px;
+  height: 90px;
+ border-radius: 8px;
+}
+.firstFotoGalery{
+padding: 5px;
+width: 80px;
+  height: 100px;
+border-radius: 5px;
+}
+.imgBlackBg{
+   text-align: center;
+
+}
+.fullImg{
+  width: 250px;
+  height: 350px;
+ margin-top:60px;
+}
+
+}
+@media screen and (max-width: 411px){
+ 
+  #divHome {
+    margin: 30px 10px;
+  }
+  /* id for o mnie 2 div */
+  #divAboutMe {
+    margin: 30px 150px;
+  }
+  /* id for potfolio 3 div */
+  #portfolioDiv {
+    margin:200px 10px;
+  }
+  /* id for kontakt 4 div */
+  #kontaktDiv {
+    margin: 200px 150px;
+  }
+  
+  
+  }
+  @media screen and (max-width: 320px){
+    .divLinkImg {
+      height: 110px;
+    width: 110px;
+    }
+    #divHome {
+      margin: 90px 10px;
+    }
+    /* id for o mnie 2 div */
+    #divAboutMe {
+      margin: 90px 130px;
+    }
+    /* id for potfolio 3 div */
+    #portfolioDiv {
+      margin:210px 10px;
+    }
+    /* id for kontakt 4 div */
+    #kontaktDiv {
+      margin: 210px 130px;
+    }
+    
+    
+    }
