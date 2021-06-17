@@ -187,6 +187,7 @@ cursor: pointer;
   scrollbar-color: gray black;
   padding: 10px;
   font-family: cursive;
+	border-radius:8px;
 }
 /*portfolio  grafik */
 .clickImg{
@@ -430,7 +431,11 @@ border-radius: 5px;
   height: 350px;
  margin-top:60px;
 }
-
+.fullImg{
+  width: 80%;
+  height: 80%;
+ 
+}
 }
 @media screen and (max-width: 411px){
  
